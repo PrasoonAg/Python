@@ -13,6 +13,7 @@ print()
 name = "Prasoon"  #string variable
 age = 99          #integer variable
 price = -9.999     #float variable
+old = True       #boolean variable
 
 print("My name is : ", name)
 print("My age is : ", age)
@@ -23,6 +24,7 @@ print()
 print(type(name))
 print(type(age))
 print(type(price))
+print(type(old))
 print()
 
 #USING VARIABLES
@@ -31,3 +33,6 @@ age2 = age1
 print("age1 is :", age1)
 print("age2 is :", age2)
 print()
+
+#Understanding Data Types
+#String
