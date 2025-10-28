@@ -1,3 +1,4 @@
+#01
 #FIRST PROGRAM IN PYTHON
 print("Hello World!!")
 print("Hey me, don't be just any programmer, be a an awesome one!!") 
@@ -34,5 +35,20 @@ print("age1 is :", age1)
 print("age2 is :", age2)
 print()
 
-#Understanding Data Types
-#String
+#Print sum
+a = 2
+b = 5
+Sum = a + b
+print(Sum)
+print()
+
+#Print difference
+Diff = b - a
+print(Diff)
+
+#COMMENTS IN PYTHON
+#This is a single line comment
+
+'''
+This is a multi-line comment
+'''
