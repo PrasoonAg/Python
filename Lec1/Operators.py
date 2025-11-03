@@ -4,9 +4,7 @@ a = 5
 b = 2
 
 print (a + b)
-
 print (a -  b)
-
 print (a * b)
 
 print (a ** b)
@@ -39,26 +37,32 @@ num = 10
 num = num + 10 # 10 + 10 = 20
 print ("num : ", num)
 
+#===#
 num = 10
 num += 10     # num = num + 10  => 10 + 10 = 20
 print ("num : ", num)
 
+#===#
 num = 10
 num -= 10    # num = num - 10  => 10 - 10 = 0
 print ("num : ", num)
 
+#===#
 num = 10
 num *= 5    # num = num * 5  => 10 * 5 = 50
 print ("num : ", num)
 
+#===#
 num = 10
 num /= 5 #num = num / 5 => 10 / 5 = 2.0
 print ("num : ", num)
 
+#===#
 num = 10
 num %= 3 #num = reminder when num is divided by 3 => 10 % 3 = 1
 print ("num : ", num)
 
+#===#
 num = 10
 num **= 2 # num = 10^2 => 10^2 = 100
 print ("num : ", num)
