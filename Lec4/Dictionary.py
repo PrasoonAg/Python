@@ -31,7 +31,7 @@ info["surname"] = "Agrawal"
 print (info)
 
 #=========================================================================#
-null_dict = {} #It is an null dictionary and 
+null_dict = {} #It is an null dictionary
 null_dict["name"]= "apnacollage"
 print(null_dict)
 
