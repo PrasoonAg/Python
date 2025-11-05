@@ -15,6 +15,7 @@ student = { #Dictionary
 #=========================================================================#
 print(student.keys(),"\n")
 print(type(student),"\n") # <class 'dict'>
+print(type(student.keys))
 
 #===#
 #Type Casting to the List

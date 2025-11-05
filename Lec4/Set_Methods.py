@@ -21,7 +21,7 @@ print(collection,"\n")
 # remove
 collection.remove(1)
 collection.remove(2)
-# collection.remove(7) # An error will be came.
+# collection.remove(7) # An error will be came, as it doesn't exist in set.
 print(collection,"\n")
 
 #=========================================================================#
@@ -37,9 +37,12 @@ print(collection)
 print(len(collection),"\n")
 
 #=========================================================================#
+# Union and Intersection
+#=========================================================================#
 set1 = {1,2,3}
 set2 = {2,3,4}
 
+#=========================================================================#
 #union
 print(set1.union(set2)) #{1,2,3,4}
 print(set1)
