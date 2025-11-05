@@ -21,9 +21,10 @@ print(len(collection2)) #Duplicate vaules will be counted only once.
 #=========================================================================#
 #Empty Set
 null_Dicationary={}
-print(type(null_Dicationary))
+print(type(null_Dicationary)) # <class 'dict'>
 #This is creating the dicationary not a Set.
 
 null_Set = set() #empty set; syntax
-print(type(null_Set))
+print(type(null_Set)) # <class 'set'>
 
+#=========================================================================#
