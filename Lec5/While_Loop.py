@@ -3,11 +3,11 @@
 # While Loop
 # #=========================================================================#
 
-# count = 1
-# count = count + 1
-# print(count)
-# while count <= 5:
-#     print(count)
+count = 1
+count = count + 1
+print(count)
+while count <= 5:
+    print(count)
 # this will print 2 , so adding should be done in loop or else like here it created infinite loop.
 #Infinite Loop can cause break and crash in websites.
 
