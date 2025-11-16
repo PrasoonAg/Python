@@ -3,26 +3,26 @@
 #Functions
 #=========================================================================#
 
-# a = 5
-# b = 3
-# sum = a+b
-# print(sum)
+a = 5
+b = 3
+sum = a+b
+print(sum)
 
-# # some lines of code
+# some lines of code
 
-# a = 6
-# b = 2
-# sum = a + b
-# print(sum)
+a = 6
+b = 2
+sum = a + b
+print(sum)
 
-# # some lines of code
+# some lines of code
 
-# a = 7
-# b = 5
-# sum = a + b
-# print(sum)
+a = 7
+b = 5
+sum = a + b
+print(sum)
 
-# # from above observation one can see we call sum again and agin this makes code looks redundant to avoid this we use functions.
+# from above observation one can see we call sum again and agin this makes code looks redundant to avoid this we use functions.
 
 #=========================================================================#
 def calc_sum(a,b):
@@ -67,3 +67,17 @@ def average(a,b,c):
     print(value)
     return value
 average(4,5,3)
+
+#or by mam
+
+def cal_avg(a,b,c):
+   # if (a==0):  # Conditional statments can be used in loops also, with
+   # proper indentation.
+    sum = a + b + c
+    avg = sum/3
+    print(avg)
+    return avg
+
+cal_avg(1,2,3)
+
+#=========================================================================#
