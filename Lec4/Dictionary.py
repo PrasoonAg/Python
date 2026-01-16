@@ -10,7 +10,7 @@ info = {
     "learning" : "coding",
     "age" : 99, #integer
     "is_adult" : True, #boolean value
-    "marks" : 94.4,#float
+    "marks" : 94.4, #float
     "subjects" : ["python","java","C"], #list
     "topics" : ("dict", "set"), #tuple
     12.99 : 94.4

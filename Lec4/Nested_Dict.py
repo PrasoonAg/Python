@@ -6,8 +6,9 @@ student = {
     "name" : "Raghav Singh",
     "subjects" : {
         "phy" : 95,
-        "chem" : 98,
+        "chem" : 100,
         "math" : 99,
     }
 }
 print(student["subjects"])
+#=========================================================================#

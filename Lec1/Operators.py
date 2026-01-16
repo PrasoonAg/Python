@@ -11,7 +11,7 @@ print (a ** b)
 #Exponentiation operator gives a raised to the power b
 
 print (a/b)
-#Intresting thing to notic here is that the division    always give float vaule , even if both the numbers are integers. If i do 4/2 it will give 2.0 not 2.
+#Intresting thing to notice here is that the division    always give float vaule , even if both the numbers are integers. If i do 4/2 it will give 2.0 not 2.
 
 print (a % b)
 #Modulus operator gives the remainder

@@ -8,13 +8,12 @@ sum = a + b
 print("Sum is : ", sum)
 
 #=========================================================================#
-
 #Type Casting (Manual Conversion)
 a = float("2")  # string => float conversion
-b = 4.25        # type float
+b = 4.25         # type float
 print(a + b)    # Output: 6.25
-#===
-a =3.14
+#===#
+a = 3.14
 a = str (a) # float => string conversion
 print(type(a)) # Output: <class 'str'>
 

@@ -1,4 +1,4 @@
-#06
+#07
 #P-2
 #=========================================================================#
 #@1# #WAP to check if a number entered by the user is odd or even.

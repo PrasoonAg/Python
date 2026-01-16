@@ -23,7 +23,8 @@ list3.reverse()
 print(list3)
 #=========================================================================#
 list4=[2,1,3]
-list4.insert(2,5) #The new value (5) will be inserted at the index position 2
+list4.insert(2,5) #(index,value)
+#The new value (5) will be inserted at the index position 2
 print(list4)
 #=========================================================================#
 #remove
@@ -38,10 +39,9 @@ print(list6)
 #=========================================================================#
 #copy
 list7 = [1,2,3]
-list8 = [1,2,3]
 
 copy_list7= list7.copy()
-copy_list7.reverse
+copy_list7.reverse # not calling this method yet, adding () this will reverse it.
 
 if(copy_list7==list7):
     print("yup")

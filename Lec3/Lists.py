@@ -7,7 +7,7 @@ print(marks)
 print(type(marks)) #list datatypes
 print(len(marks))
 print("")
-#properties are similar to the list
+#properties are similar to the string
 print(marks[0])
 print(marks[1])
 print("")
@@ -20,3 +20,4 @@ print(student)
 print("")
 #List inex can be changed while String cant
 # print(student[5]) will give an error
+#=========================================================================#

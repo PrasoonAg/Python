@@ -16,7 +16,7 @@ print("area ", side * side)
 #@3# #WAP to input 2 floating point numbers and print their average.
 num1 = float(input("Enter first floating point number:"))
 num2 = float(input("Enter second floating point number:"))
-print("avg =", a+b/2)
+print("avg =", num1+num2/2)
 #=========================================================================#
 #@4# #WAP to input int numbers, a and b. Print True if is 'a' grater than or equal to 'b'. If not print False.
 a = int(input("Enter first integer number:"))

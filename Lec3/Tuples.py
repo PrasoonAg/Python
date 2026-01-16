@@ -6,7 +6,7 @@ tup1 = (2,1,3,1)
 print(tup1[0])
 print(tup1[1])
 print("")
-##tup [0]= 5 #This operation is not allowed as Tuples are IMMUTABLE (Same thing happens in String (as there are also IMMUTABLE))
+#tup [0]= 5 #This operation is not allowed as Tuples are IMMUTABLE (Same thing happens in String (as there are also IMMUTABLE))
 #=========================================================================#
 tup2 = () #Empty Tuple
 print(tup2) #Valid

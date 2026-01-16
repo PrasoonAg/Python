@@ -12,19 +12,21 @@ collection = {1,2,3,4,"hello","world"}
 # Strings like "hello" and "world" have different hash values, so their order depends on the internal hashing — it looks “random.”
 
 print (collection)
-print(type(collection)) # <class 'set'>
+print(type(collection),"\n") # <class 'set'>
+
 #=========================================================================#
 collection2= {1,2,2,2,"world", " hello" , "world" , 4}
 # Duplicate vaules will be printed once.
 print(collection2)
-print(len(collection2)) #Duplicate vaules will be counted only once.
+print(len(collection2),"\n") #Duplicate vaules will be counted only once.
+
 #=========================================================================#
 #Empty Set
+
 null_Dicationary={}
 print(type(null_Dicationary)) # <class 'dict'>
 #This is creating the dicationary not a Set.
 
 null_Set = set() #empty set; syntax
 print(type(null_Set)) # <class 'set'>
-
 #=========================================================================#

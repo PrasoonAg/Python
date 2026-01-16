@@ -36,6 +36,7 @@ else:
     print("You cannot vote")
 #=========================================================================#
 #Grade system based on marks
+#This is one best-clean version for this
 marks=int(input("Enter your marks:"))
 if(marks>=90):
     print("Grade A")
@@ -48,6 +49,7 @@ elif(marks>=60):
 print("End of program\n")
 #=========================================================================#
 #Grading system done with logical operators
+#This code is right but making the code redudant.
 marks=int(input("Enter your marks:"))
 if(marks>= 90):
     grade = "A"
