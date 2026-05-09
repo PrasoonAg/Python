@@ -8,16 +8,26 @@
 
 class Account():
     def __init__(self,balance,account_no):
+        # self -> current object being created
+        # balance & account_no -> values passed during object creation
         self.balance = balance
         self.account_no = account_no
     
     def debit(self, amount):
+        # accesing current object's attributes using self
         self.balance -= amount
         print("Rs", amount, "is debited.")
         print("total balance =", self.balance)
 
     
     def credit(self, amount):
+        # self -> object calling the method
+        # num2 -> secound object passed as argument
+        
+        # 'amount' is just a parameter name.
+        # it can be anything like:
+        # other, obj, x, abc etc
+        
         self.balance += amount
         print("Rs", amount, "is credited.")
         print("total balance =", self.balance)
