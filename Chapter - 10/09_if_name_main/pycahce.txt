@@ -1,0 +1,10 @@
+# __pycache__
+# Special folder created automatically by Python.
+
+# Stores compiled bytecode files (.pyc).
+# Used to speed up module loading.
+
+# Safe to delete.
+# Python will recreate it when needed.
+
+# Usually ignored in GitHub repositories.

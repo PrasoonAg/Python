@@ -1,0 +1,3 @@
+I am learning Python.
+My name is Prasoon.
+D:\Prasoon (Temporary)\Coding\Python\Lec7\demo.txt
