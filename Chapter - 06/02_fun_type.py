@@ -37,3 +37,10 @@ range()
 # range(start, stop)
 # range(start, stop, step)
 #=========================================================================#
+round(number, ndigits)
+# Round a number to a given precision in decimal digits.
+
+bmi = 84/1.65**2
+
+print(round(bmi,2))
+#=========================================================================#

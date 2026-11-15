@@ -27,6 +27,11 @@ greet(name) # Passing data in function
 # Object (Instance) = Actual object created from a class.
 # One class can create many objects (instances).
 
+# Python object = anything that exists as a value in Python.
+# Example -
+# x = 10                  # 10 is an object.
+# name = "Prasoon"        # "Prasoon" is an object.
+# numbers = [1, 2, 3]     # list is an object.
 #=========================================================================#
 # Why Classes?
 # Without classes, data for similar entities would be stored in many separate variables.

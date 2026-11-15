@@ -1,37 +1,58 @@
 #=========================================================================#
-# 01 - Dicationary
+# 01 - Dictionary
 #=========================================================================#
+# Dictionary stores data in key : value pairs.
+# Keys must be immutable and unique.
 info = {
-    
-    "key" : "value",
-    
-    "name" : "apna college",
-    "learning" : "coding",
-    "age" : 99, # integer
-    "is_adult" : True, # boolean value
-    "marks" : 94.4, # float
-    "subjects" : ["python","java","C"], # list
-    "topics" : ("dict", "set"), # tuple
-    12.99 : 94.4
-# keys must be immutable.
+    "name": "apna college",
+    "learning": "coding",
+    "age": 99,                  # integer
+    "is_adult": True,           # boolean
+    "marks": 94.4,              # float
+    "subjects": ["python", "java", "C"],  # list
+    "topics": ("dict", "set"),           # tuple
+    12.99: 94.4
 }
-print(info)
-print(type(info),"\n")
 
+# Accessing a value using its key
 print(info["name"])
-print(info["topics"])
-print(info["name"])
-print(info["age"])
-# print(info["surname"]) # This will give error as key doesn't exist.
 
-info["name"] = "Prasoon" # name already exist so, now values get updated
-info["learning"] = 23
+# Updating an existing value
+info["name"] = "Prasoon"
+
+# Adding a new key : value pair
 info["surname"] = "Agrawal"
-print (info)
+
+# print(info["surname"]) → Error if key doesn't exist.
 
 #=========================================================================#
-null_dict = {} # It is an null dictionary
-null_dict["name"]= "apnacollege"
+# Empty Dictionary
+#=========================================================================#
+null_dict = {}
+
+# Adding data to an empty dictionary
+null_dict["name"] = "apnacollege"
 print(null_dict)
 
+#=========================================================================#
+# Dictionary Operations
+#=========================================================================#
+programming_dictionary = {
+    "Bug": "An error in a program.",
+    "Function": "A piece of code that can be called repeatedly."
+}
+
+# Adding a new item
+programming_dictionary["Loop"] = "Doing something repeatedly."
+
+# Updating an existing item
+programming_dictionary["Bug"] = "A moth in your computer."
+
+# Wiping a dictionary
+# programming_dictionary = {}
+
+# Looping through a dictionary
+for key in programming_dictionary:
+    print(key)
+    print(programming_dictionary[key])
 #=========================================================================#

@@ -13,9 +13,38 @@ print (a ** b) # Exponentiation Operator -  gives a raised to the power b
 
 print (a/b) # Divsion Operator - gives always the output in float i.e. 2.5, 2.0 etc
 
-print (a % b) # Modulus operator - gives the remainder
+print (a % b) # Modulus / Modulo operator - gives the remainder
+
+# Common Uses of Modulo (%)
+# Modulo is commonly used for checking divisibility and creating repeating or circular patterns.
+
+# Check even/odd
+10 % 2 == 0      # True
+
+# Check divisibility
+15 % 5 == 0      # True
+
+# Create repeating/circular patterns
+(25 + 5) % 26    # 4
 
 print (a // b) # Floor division operator -  gives the integer part of the division
+
+# PEDMAS or P-E-DM-AS (Left to Right)
+# It basically states the order of priority is Parentheses, Exponents, Multiplication,
+# Division, Addition and Subtraction.
+# ()
+# **
+# * OR /
+# + OR -
+
+print(3 * 3 + 3/3 - 3) # 7.0
+# The calculation occurs form left to right
+# 3*3 = 9 and 3/3 = 1.0
+# 9 + 1.0 = 10.0
+# 10.0 - 3 = 7.0
+
+# changing the above code to get the output 3
+print(3 * (3 + 3) /3 - 3)
 
 #=========================================================================#
 # Comparison/Relational Operators (Answers will be boolean values True or False)

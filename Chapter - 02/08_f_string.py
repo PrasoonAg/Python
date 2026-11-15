@@ -43,6 +43,8 @@ print(letter.format(name="Prasoon",country="India"))
 # f-Strings
 #=========================================================================#
 # This method is introduced in Python 3.6 and most widely used today.
+f"This is f-string."
+
 name = "Prasoon"
 country = "India"
 

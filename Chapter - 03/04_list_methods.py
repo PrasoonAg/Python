@@ -3,8 +3,18 @@
 #=========================================================================#
 # append()
 #=========================================================================#
+# Add an item to the end of the list.
 list = [2,1,3]
 list.append(4)
+print(list)
+
+list.extend([])
+
+#=========================================================================#
+# extend()
+#=========================================================================#
+# adds all items from an iterable to the end of the list.
+list.extend([5,6,7,8,9,0])
 print(list)
 
 #=========================================================================#
@@ -60,4 +70,27 @@ if(copy_list7==list7):
     print("yup")
 else:
     print("no")
+
+#=========================================================================#
+import random # importing random module
+#=========================================================================#
+# Fetching random data from list.
+
+# choice()
+# Choose a random element from a non-empty sequence.
+
+friends = ["Chandler", "Joye", "Faiz", "Aaditya"]
+print(random.choice(friends))
+
+# choices()
+# Returns a list containing random elements from the sequence.
+# Always wraps the result in a list (e.g., ['Chandler']), even for a single item!
+friends_list = random.choices(friends, k=1)
+print(friends_list)
+
+# randint()
+# Return random integer in range [a, b], including both end points.
+
+random_index = random.randint(0,3)
+print(friends[random_index])
 #=========================================================================#

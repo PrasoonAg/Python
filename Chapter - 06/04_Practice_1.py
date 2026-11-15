@@ -109,3 +109,34 @@ def nums(a):
 nums(2)
 nums(3)
 #=========================================================================#
+#Q5# WAP to check Leap year.
+# 2024 → divisible by 4 → leap year
+# 1900 → divisible by 4 AND 100 → not a leap year
+# 2000 → divisible by 4, 100 AND 400 → leap year
+
+def is_leap_year(year):
+    if year%4 == 0:
+        if year% 100 == 0 and year% 400 == 0:
+            print("Its a leap year!")
+        elif year% 100 == 0:
+            print("Its a not leap year!")
+        else:
+            print("Its a leap year!")
+    else:
+        print("Its a not leap year!")
+
+is_leap_year(int(input("Enter: ")))
+
+# Alternative solution
+def is_leap_year(year):
+    if year%4 == 0:
+        if year%100 == 0:
+            if year%400 == 0:
+                return True
+            else:
+                return False
+        else:
+            return True
+    else:
+        return False
+#=========================================================================#

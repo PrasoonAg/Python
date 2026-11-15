@@ -3,89 +3,168 @@
 #=========================================================================#
 # A function is a reusable block of code that performs a specific task.
 
-a = 5
-b = 3
-sum = a+b
-print(sum)
-
-# some lines of code
-
-a = 6
-b = 2
-sum = a + b
-print(sum)
-
-# some lines of code
-
-a = 7
-b = 5
-sum = a + b
-print(sum)
-
-# from above observation one can see we call sum again and agin this makes code looks redundant
-# to avoid this we use functions.
+# Why use functions?
+# Functions help avoid repeating the same code and make code reusable.
 
 #=========================================================================#
-# Defining a function
-def calc_sum(a,b): # here a and b are Parameter(placeholder)
-    sum = a + b
-    print(sum)
-    return sum
-
-# Calling that function
-calc_sum(5,3) # 5, 3 are an argument.
-# some lines of codes
-
-calc_sum(6,2)
-# some lines of codes
-
-calc_sum(7,5)
-# some lines of codes
-
-# Now the code is less redundant and more reusable.
-print("")
-
+# Defining and Calling a Function
 #=========================================================================#
-# Function Defination
-def calc_sum1(a,b): # parameters(taking input)
-    return a+b # for output
-# return will give result
-# while if used print() it will show result
-# return -> sends result
-# print() -> shows result
+# Define a function using the 'def' keyword.
+# The code inside the function runs only when the function is called.
 
-sum = calc_sum1(4,5) #9 # function call # 4,5 is called arguments
-print(sum)
-print("")
-
-#=========================================================================#
-def print_hello(): # no parameters are used
-    print("hello")
-# function without a return value
+def print_hello():
+    print("Hello")
 
 print_hello()
 
-output = print_hello() # output = None
-print(output) #not returning anything so 'None' came.
-# Function reaches end without return
-# Python automatically does : return none
 #=========================================================================#
-# average of 3 numbers
-def average(a,b,c):
-    value =float((a+b+c)/3)
-    print(value)
-    return value
-average(4,5,3)
+# Function with Input
+#=========================================================================#
+# A function can receive input through parameters.
+# Parameters are placeholders for the values that the function will receive.
 
-#or by mam
+def greet(name):
+    print(f"Hello {name}")
 
-def cal_avg(a,b,c):
-   # if (a==0):  # Conditional statments can be used in loops also, with
-   # proper indentation.
-    sum = a + b + c
-    avg = sum/3
-    print(avg)
-    return avg
+greet("Prasoon")
 
-cal_avg(1,2,3)
+#=========================================================================#
+# Function with Input and Print
+#=========================================================================#
+# A function can take input and directly print the result.
+# print() displays the result but does not return it.
+
+def calc_sum(a, b):
+    print(a + b)
+
+calc_sum(5, 3)
+
+#=========================================================================#
+# Function with Input and Return
+#=========================================================================#
+# return sends a value back to the place where the function was called.
+# The returned value can be stored, printed, or used in another operation.
+
+def calc_sum(a, b):
+    return a + b
+
+result = calc_sum(5, 3)
+print(result)
+
+#=========================================================================#
+# print() vs return
+#=========================================================================#
+# print() → displays a value
+# return  → sends a value back to the caller
+
+# return is useful when the result needs to be used outside the function.
+
+#=========================================================================#
+# Function without a Return Value
+#=========================================================================#
+# If a function does not use return, it returns None automatically.
+
+def print_hello():
+    print("Hello")
+
+output = print_hello()
+print(output)       # None
+
+#=========================================================================#
+# Function with Multiple Parameters
+#=========================================================================#
+# A function can have multiple parameters.
+# Each parameter receives a corresponding argument.
+
+def average(a, b, c):
+    total = a + b + c
+    return total / 3
+
+print(average(4, 5, 3))
+
+#=========================================================================#
+# Arguments
+#=========================================================================#
+# Arguments are the actual values passed to a function when it is called.
+
+# Positional Arguments:
+# Arguments are assigned to parameters according to their position/order.
+
+def example(a, b, c):
+    print(a, b, c)
+
+example(10, 20, 30)
+
+# Keyword Arguments:
+# Arguments are assigned to parameters using their parameter names.
+
+example(c=30, a=10, b=20)
+
+#=========================================================================#
+# Practical Example
+#=========================================================================#
+# Functions can take input, process it, and return the required result.
+
+def format_name(f_name, l_name):
+    formatted_f_name = f_name.title()
+    formatted_l_name = l_name.title()
+    return f"{formatted_f_name} {formatted_l_name}"
+
+print(format_name("PraSoON", "AGrAwaL"))
+
+#=========================================================================#
+# Using Functions Together
+#=========================================================================#
+# The returned value of one function can be directly used as an
+# argument for another function.
+
+def double_text(text):
+    return text + text
+
+def format_text(text):
+    return text.title()
+
+output = format_text(double_text("hello"))
+print(output)
+
+# double_text("hello") → "hellohello"
+# format_text("hellohello") → "Hellohello"
+
+# The inner function runs first, and its returned value is passed
+# to the outer function.
+
+#=========================================================================#
+# Multiple things we can do
+#=========================================================================#
+# Can have multiple returns
+# also can have return keyword without anything else afterwards
+# can apply conditional statements
+def format_name(f_name, l_name):
+    if f_name == "" or l_name == "":
+        return # None
+    formatted_f_name = f_name.title()
+    formatted_l_name = l_name.title()
+    return f"{formatted_f_name} {formatted_l_name}"
+    print("This got printed") # function is exectuted
+
+print(format_name(input("What is your first name? "), input("What is your last name? ")))
+
+#=========================================================================#
+# Docstring
+#=========================================================================#
+# A docstring is a string used to document code.
+# It is written inside triple quotes (""" """).
+
+# For functions, the docstring is placed immediately after the function
+# definition. It describes what the function does and can be viewed
+# when hovering over the function or using help().
+
+def my_function(num):
+    """Multiply a number by itself."""
+    return num * num
+
+print(my_function(5))
+
+# Docstrings are mainly used to explain the purpose of a function,
+# class, or module.
 #=========================================================================#
